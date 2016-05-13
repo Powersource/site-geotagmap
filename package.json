@@ -1,0 +1,20 @@
+{
+  "name": "site-geotagmap",
+  "version": "1.0.0",
+  "description": "Displays a map of the tags that the api part sends.",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "geotag",
+    "tag",
+    "instagram"
+  ],
+  "author": "jacob.karlsson95@gmail.com",
+  "license": "GPL-3.0"
+}

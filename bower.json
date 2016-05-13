@@ -1,0 +1,22 @@
+{
+  "name": "site-geotagmap",
+  "description": "Displays a map of the tags that the api part sends.",
+  "main": "public/index.html",
+  "authors": [
+    "jacob.karlsson95@gmail.com"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "geotag",
+    "tag",
+    "instagram"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

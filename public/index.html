@@ -2,17 +2,23 @@
 	<head>
 		<link rel="stylesheet" href="lib/leaflet/dist/leaflet.css"/>
 		<script src="lib/leaflet/dist/leaflet-src.js"></script>
+		<script src="lib/jquery/dist/jquery.js"></script>
+		<meta name="viewport" content="width=400px"/>
 	</head>
 	<body>
 		There should be a map here:
-		<div id="mapid" style="height: 500px"></div>
+		<div id="mapid"></div>
 		<script>
-			console.log("oldschool");
-			var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-				maxZoom: 19,
-				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-			}).addTo(mymap);
+$(function(){
+	//$("#mapid").width(document.documentElement.clientWidth);
+	//$("#mapid").width("100%");
+	$("#mapid").height("100%");
+	var mymap = L.map('mapid').setView([55.698, 13.185], 16);
+	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(mymap);
+});
 		</script>
 	</body>
 </html>

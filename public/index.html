@@ -12,12 +12,42 @@
 $(function(){
 	//$("#mapid").width(document.documentElement.clientWidth);
 	//$("#mapid").width("100%");
-	$("#mapid").height("100%");
+	$("#mapid").height(document.documentElement.clientWidth*2/3);//"100%");
 	var mymap = L.map('mapid').setView([55.698, 13.185], 16);
 	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(mymap);
+	var mapData = [{
+	"type": "FeatureCollection",
+	"features": [
+	  {
+	    "type": "Feature",
+	    "properties": {},
+	    "geometry": {
+	      "type": "LineString",
+	      "coordinates": [
+	        [
+	          13.185685873031616,
+	          55.697696669855574
+	        ],
+	        [
+	          13.186163306236265,
+	          55.69789922154961
+	        ],
+	        [
+	          13.186023831367493,
+	          55.698011078005415
+	        ],
+	        [
+	          13.186302781105042,
+	          55.69780248057294
+	        ]
+	      ]
+	    }
+	  }]
+	}];
+	L.geoJson(mapData).addTo(mymap);
 });
 		</script>
 	</body>

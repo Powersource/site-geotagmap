@@ -7,10 +7,6 @@
     "start": "ws",
     "build": "gulp build"
   },
-  "repository": {
-    "type": "git",
-    "url": "yes"
-  },
   "keywords": [
     "geotag",
     "tag",

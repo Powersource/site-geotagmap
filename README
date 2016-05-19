@@ -1,0 +1,2 @@
+# Site-Geotagmap
+The site component of the Geotagmap project. Mostly doing this to get to grips with npm, bower and both sides of apis. Not functional atm. but apparently (most of) the instagram api doesn't work at all without an access token and a site to redirect to. So here we are.
